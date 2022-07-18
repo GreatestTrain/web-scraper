@@ -1,0 +1,20 @@
+news_sites:
+  eluniversal:
+    url: "http://www.eluniversal.com.mx"
+    queries:
+      homepage_article_links: '.field-content a'
+      article_body: '.field-name-body'
+      # article_title: '.pane-content h1'
+      article_title: '.contenido-principal h1'
+  elpais:
+    url: "https://elpais.com"
+    queries:
+      homepage_article_links: '.field-content a'
+      article_body: 'p'
+      article_title: 'h1.a_t'
+  elcomerciope:
+    url: "https://elcomercio.pe"
+    queries:
+      homepage_article_links: '.grid a'
+      article_title: 'h1.sht__title'
+      article_body: '.story-contents__content a,p,b'
